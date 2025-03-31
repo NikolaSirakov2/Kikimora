@@ -3,8 +3,19 @@ import styled from "styled-components";
 
 const HeroContainer = styled.section`
   padding: 80px 120px;
-  background-color: #001529;
   color: white;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2, 19, 35, 0.3);
+    pointer-events: none;
+  }
 `;
 
 const MainHero = styled.div`
@@ -12,6 +23,8 @@ const MainHero = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 48px;
+  position: relative;
+  z-index: 1;
 `;
 
 const HeroContent = styled.div`

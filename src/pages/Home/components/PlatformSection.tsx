@@ -3,11 +3,22 @@ import styled from "styled-components";
 
 const PlatformContainer = styled.section`
   padding: 80px 120px;
-  background-color: #001529;
   color: white;
   display: flex;
   gap: 48px;
   justify-content: flex-start;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(2, 19, 35, 0.3);
+    pointer-events: none;
+  }
 `;
 
 const ContentSection = styled.div`
@@ -16,6 +27,8 @@ const ContentSection = styled.div`
   flex-direction: column;
   gap: 24px;
   max-width: 700px;
+  position: relative;
+  z-index: 1;
 `;
 
 const Title = styled.h2`
@@ -60,6 +73,8 @@ const ChartPlaceholder = styled.div`
   align-items: center;
   justify-content: center;
   color: #ff0000;
+  position: relative;
+  z-index: 1;
 `;
 
 export const PlatformSection: React.FC = () => {
