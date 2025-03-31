@@ -15,7 +15,7 @@ const ContentSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  max-width: 500px;
+  max-width: 700px;
 `;
 
 const Title = styled.h2`
