@@ -6,6 +6,8 @@ const FooterContainer = styled.footer`
   background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
   padding: 16px;
   border-top: 2px solid rgba(255, 255, 255, 0.1);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
 `;
 
 const FooterContent = styled.div`
@@ -27,6 +29,7 @@ const SocialLink = styled.a`
   font-size: 14px;
   opacity: 0.8;
   transition: all 0.2s ease;
+  font-family: inherit;
 
   &:hover {
     opacity: 1;
@@ -37,6 +40,7 @@ const Copyright = styled.p`
   color: white;
   font-size: 14px;
   opacity: 0.8;
+  font-family: inherit;
 `;
 
 const LegalLinks = styled.div`
@@ -50,6 +54,7 @@ const LegalLink = styled(Link)`
   font-size: 14px;
   opacity: 0.8;
   transition: all 0.2s ease;
+  font-family: inherit;
 
   &:hover {
     opacity: 1;
