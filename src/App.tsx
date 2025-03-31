@@ -6,7 +6,7 @@ import { ErrorBoundary } from "react-error-boundary";
 import { Navigation } from "./components/Navigation/Navigation";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
-
+import { Footer } from "./components/Footer/Footer";
 // Create a client
 const queryClient = new QueryClient();
 
@@ -47,6 +47,7 @@ function App() {
                 <Route path="/about" element={<About />} />
               </Routes>
             </MainContent>
+            <Footer />
           </AppContainer>
         </Router>
       </QueryClientProvider>
